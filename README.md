@@ -49,7 +49,7 @@ Tokens:  ['Hello', ',', ' world', '!']
 
 ## More examples
 
-* A long system prompt that asked Llama to generate podcast script from a text:
+* A long system prompt that asks Llama to generate podcast script from a text:
 
 ```
 SYSTEM_PROMPT = """
