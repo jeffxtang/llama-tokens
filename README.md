@@ -1,6 +1,9 @@
 # llama-tokens
 A Quick Library with Llama 3.1 &amp; 3.2 Tokenization
 
+* Get the number of tokens of any text
+* Show the tokens of any text
+
 To test on Terminal:
 ```
 pip install llama-tokens
