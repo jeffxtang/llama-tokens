@@ -1,13 +1,17 @@
 # A Quick Library with Llama 3.1/3.2 Tokenization
 
-If you ever wonder about
-* the number of tokens of any large prompt or response
+If you ever wonder about:
+
+* the number of tokens of any large prompt or response, or
 * the exact tokens of any text
-for financial cost consideration (since cloud providers charge by number of tokens), LLM reasoning issue (since tokenization is the foundation), or just out of curiosity, the llama-tokens library is for you.
 
-This libray code is extracted from the original Llama tokenization lesson (Colab [link](https://colab.research.google.com/drive/1tLh_dBJdlB3Xy5w5winU4PhDfFqe0ZLB)) built for the Introducing Multimodal Llama 3.2 short [course](https://learn.deeplearning.ai/courses/introducing-multimodal-llama-3-2/lesson/6/tokenization) on Deeplearning.ai. (Note: Llama 3.2 uses the same tokenization model as in Llama 3.1).
+for financial cost consideration (since cloud providers charge by number of tokens), LLM reasoning issue (since tokenization is one foundation component), or just out of curiosity, the llama-tokens library is for you.
 
-To try out on Terminal:
+This [libray](https://pypi.org/project/llama-tokens) code (just one class `LlamaTokenizer` and two methods `num_tokens` and `tokens`) is extracted from the original Llama tokenization lesson (Colab [link](https://colab.research.google.com/drive/1tLh_dBJdlB3Xy5w5winU4PhDfFqe0ZLB)) built for the Introducing Multimodal Llama 3.2 short [course](https://learn.deeplearning.ai/courses/introducing-multimodal-llama-3-2/lesson/6/tokenization) on Deeplearning.ai. (Note: Llama 3.2 uses the same tokenization model as in Llama 3.1).
+
+## Quick Start
+
+### On Terminal:
 ```
 pip install llama-tokens
 git clone https://github.com/jeffxtang/llama-tokens
@@ -21,8 +25,7 @@ Number of tokens:  4
 Tokens:  ['Hello', ',', ' world', '!']
 ```
 
-
-To use it on Colab:
+### On Colab
 ```
 !pip install llama-tokens
 
@@ -44,7 +47,8 @@ Number of tokens:  4
 Tokens:  ['Hello', ',', ' world', '!']
 ```
 
-More examples:
+## More examples
+
 * A long system prompt that asked Llama to generate podcast script from a text:
 
 ```
