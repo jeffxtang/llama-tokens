@@ -41,6 +41,8 @@ text = "Hello, world!"
 print("Text: ", text)
 print("Number of tokens: ", tokenizer.num_tokens(text))
 print("Tokens: ", tokenizer.tokens(text))
+print("Encoded: ", tokenizer.encode(text))
+print("Decoded: ", tokenizer.decode(tokenizer.encode(text)))
 ```
 
 The same output will be generated:
@@ -48,6 +50,8 @@ The same output will be generated:
 Text:  Hello, world!
 Number of tokens:  4
 Tokens:  ['Hello', ',', ' world', '!']
+Encoded:  [9906, 11, 1917, 0]
+Decoded:  Hello, world!
 ```
 
 ## More examples
@@ -115,7 +119,8 @@ Remember: Always reply in valid JSON format, without code blocks. Begin directly
 print("Text: ", SYSTEM_PROMPT)
 print("Number of tokens: ", tokenizer.num_tokens(SYSTEM_PROMPT))
 print("Tokens: ", tokenizer.tokens(SYSTEM_PROMPT))
-
+print("Encoded: ", tokenizer.encode(SYSTEM_PROMPT))
+print("Decoded: ", tokenizer.decode(tokenizer.encode(SYSTEM_PROMPT)))
 ```
 
 * A likely tricky LLM letter counting question:
@@ -125,4 +130,15 @@ text = "How many r's in the word strawberry?"
 print("Text: ", text)
 print("Number of tokens: ", tokenizer.num_tokens(text))
 print("Tokens: ", tokenizer.tokens(text))
+print("Encoded: ", tokenizer.encode(text))
+print("Decoded: ", tokenizer.decode(tokenizer.encode(text)))
+```
+
+The output will be:
+```
+Text:  How many r's in the word strawberry?
+Number of tokens:  9
+Tokens:  ['How', ' many', ' r', "'s", ' in', ' the', ' word', ' strawberry', '?']
+Encoded:  [4438, 1690, 436, 596, 304, 279, 3492, 73700, 30]
+Decoded:  How many r's in the word strawberry?
 ```
