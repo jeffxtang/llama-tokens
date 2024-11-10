@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llama_tokens"
-version = "0.0.1"
-description = "A Quick Library with Llama 3.1 & 3.2 Tokenization"
+version = "0.0.3"
+description = "A Quick Library with Llama 3.1/3.2 Tokenization - source https://github.com/jeffxtang/llama-tokens"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [

@@ -53,6 +53,13 @@ class LlamaTokenizer:
         encoded_tokens = self.tokenizer.encode(text)
         return [self.tokenizer.decode([token]) for token in encoded_tokens]
 
+    def encode(self, text: str) -> [int]:
+        """Return the list of integers of the text string."""
+        return self.tokenizer.encode(text)
+
+    def decode(self, lst: [int]) -> str:
+        """Return the text string of a list of integers."""
+        return self.tokenizer.decode(lst)
 
 if __name__ == "__main__":
     tokenizer = LlamaTokenizer()
